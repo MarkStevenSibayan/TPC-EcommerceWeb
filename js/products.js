@@ -1,11 +1,11 @@
-// Product data
+// Product data with updated image paths
 const products = [
   {
     id: 1,
     name: "AMD Ryzen 9 5900X",
     category: "cpu",
     price: 499.99,
-    image: "https://via.placeholder.com/300x300/1a1a1a/cccccc?text=Ryzen+9+5900X",
+    image: "/images/ryzen-9-5900x.png",
     description:
       "12-core, 24-thread processor with a base clock of 3.7GHz and boost clock up to 4.8GHz. Perfect for gaming and content creation.",
     stock: 15,
@@ -23,7 +23,7 @@ const products = [
     name: "Intel Core i9-12900K",
     category: "cpu",
     price: 589.99,
-    image: "https://via.placeholder.com/300x300/1a1a1a/cccccc?text=i9-12900K",
+    image: "/images/intel-i9-12900k.png",
     description:
       "16-core (8P+8E), 24-thread processor with a base clock of 3.2GHz and boost clock up to 5.2GHz. Intel's flagship gaming CPU.",
     stock: 8,
@@ -41,7 +41,7 @@ const products = [
     name: "NVIDIA GeForce RTX 4080",
     category: "gpu",
     price: 1199.99,
-    image: "https://via.placeholder.com/300x300/1a1a1a/cccccc?text=RTX+4080",
+    image: "/images/rtx-4080.png",
     description:
       "High-end graphics card with 16GB GDDR6X memory. Perfect for 4K gaming and content creation with ray tracing and DLSS support.",
     stock: 5,
@@ -59,7 +59,7 @@ const products = [
     name: "AMD Radeon RX 7900 XTX",
     category: "gpu",
     price: 999.99,
-    image: "https://via.placeholder.com/300x300/1a1a1a/cccccc?text=RX+7900+XTX",
+    image: "/images/rx-7900-xtx.png",
     description:
       "High-performance graphics card with 24GB GDDR6 memory. Excellent for 4K gaming and professional workloads.",
     stock: 3,
@@ -77,7 +77,7 @@ const products = [
     name: "Corsair Vengeance RGB Pro 32GB",
     category: "ram",
     price: 129.99,
-    image: "https://via.placeholder.com/300x300/1a1a1a/cccccc?text=Corsair+RAM",
+    image: "/images/corsair-ram.png",
     description: "32GB (2x16GB) DDR4-3600MHz CL18 memory kit with RGB lighting. Perfect for gaming and multitasking.",
     stock: 20,
     vendor: "Corsair",
@@ -94,7 +94,7 @@ const products = [
     name: "G.Skill Trident Z5 RGB 32GB",
     category: "ram",
     price: 189.99,
-    image: "https://via.placeholder.com/300x300/1a1a1a/cccccc?text=G.Skill+RAM",
+    image: "/images/gskill-ram.png",
     description:
       "32GB (2x16GB) DDR5-6000MHz CL36 memory kit with RGB lighting. High-performance memory for next-gen systems.",
     stock: 12,
@@ -112,7 +112,7 @@ const products = [
     name: "Samsung 980 Pro 2TB",
     category: "storage",
     price: 249.99,
-    image: "https://via.placeholder.com/300x300/1a1a1a/cccccc?text=Samsung+SSD",
+    image: "/images/samsung-ssd.png",
     description: "2TB PCIe 4.0 NVMe SSD with read speeds up to 7,000 MB/s. Perfect for gaming and content creation.",
     stock: 15,
     vendor: "Samsung",
@@ -129,7 +129,7 @@ const products = [
     name: "WD Black SN850X 1TB",
     category: "storage",
     price: 159.99,
-    image: "https://via.placeholder.com/300x300/1a1a1a/cccccc?text=WD+SSD",
+    image: "/images/wd-ssd.png",
     description:
       "1TB PCIe 4.0 NVMe SSD with read speeds up to 7,300 MB/s. Designed for gaming and high-performance computing.",
     stock: 18,
@@ -147,7 +147,7 @@ const products = [
     name: "ASUS ROG Strix Z690-E Gaming",
     category: "motherboard",
     price: 399.99,
-    image: "https://via.placeholder.com/300x300/1a1a1a/cccccc?text=ASUS+Motherboard",
+    image: "/images/asus-motherboard.png",
     description:
       "High-end ATX motherboard for Intel 12th Gen processors with PCIe 5.0, DDR5 support, and robust VRM for overclocking.",
     stock: 7,
@@ -165,7 +165,7 @@ const products = [
     name: "MSI MPG X570S Carbon Max WiFi",
     category: "motherboard",
     price: 349.99,
-    image: "https://via.placeholder.com/300x300/1a1a1a/cccccc?text=MSI+Motherboard",
+    image: "/images/msi-motherboard.png",
     description: "Feature-rich ATX motherboard for AMD Ryzen processors with PCIe 4.0, WiFi 6E, and premium audio.",
     stock: 9,
     vendor: "MSI",
@@ -182,7 +182,7 @@ const products = [
     name: "Corsair RM850x",
     category: "power-supply",
     price: 149.99,
-    image: "https://via.placeholder.com/300x300/1a1a1a/cccccc?text=Corsair+PSU",
+    image: "/images/corsair-psu.png",
     description:
       "850W fully modular power supply with 80+ Gold certification. Features silent operation and high-quality Japanese capacitors.",
     stock: 14,
@@ -200,7 +200,7 @@ const products = [
     name: "NZXT Kraken X73 RGB",
     category: "cooling",
     price: 199.99,
-    image: "https://via.placeholder.com/300x300/1a1a1a/cccccc?text=NZXT+Cooler",
+    image: "/images/nzxt-cooler.png",
     description:
       "360mm AIO liquid CPU cooler with RGB lighting. Features a customizable infinity mirror pump cap and three 120mm fans.",
     stock: 6,
