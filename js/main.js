@@ -46,8 +46,8 @@ function displayProducts(products, container) {
 
   if (products.length === 0) {
     container.innerHTML = `
-      <div class="no-products">
-        <i class="fas fa-search"></i>
+      <div class="no-products" style="text-align: center; padding: 3rem; color: var(--text-secondary);">
+        <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 1rem;"></i>
         <p>No products found</p>
       </div>
     `
@@ -114,6 +114,8 @@ function formatCategory(category) {
     motherboard: "Motherboards",
     "power-supply": "Power Supplies",
     cooling: "Cooling",
+    case: "Cases",
+    peripherals: "Peripherals",
   }
   return categoryMap[category] || category.charAt(0).toUpperCase() + category.slice(1)
 }
@@ -136,7 +138,7 @@ function addToCart(productId, quantity = 1) {
   if (existingItem) {
     existingItem.quantity += quantity
   } else {
-    const product = window.getProductById(productId) // Declare or import getProductById
+    const product = window.getProductById(productId)
     if (product) {
       cart.push({
         id: product.id,
